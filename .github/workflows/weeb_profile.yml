@@ -1,14 +1,12 @@
 name: WeebProfile
 
 on:
-  # 🦀 Schedule
   schedule:
-    - cron: "0 0 * * *" # Everyday at 00:00 UTC
-
-  # 💡 Run manually from Actions tab
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - master
   workflow_dispatch: {}
-
-  # push: {}
 
 jobs:
   weeb_profile:
