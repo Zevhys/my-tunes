@@ -1,10 +1,15 @@
 name: WeebProfile
+
 on:
-# 🦀 Schedule
-schedule: [{ cron: "0 0 * * *" }] # Everyday at 00:00 UTC
-# 💡 The following line lets you run workflow manually from the action tab!
-workflow_dispatch:
-# 🚀 Push event
+  # 🦀 Schedule
+  schedule:
+    - cron: "0 0 * * *" # Everyday at 00:00 UTC
+
+  # 💡 Run manually from Actions tab
+  workflow_dispatch: {}
+
+  # push: {}
+
 jobs:
   weeb_profile:
     runs-on: ubuntu-latest
